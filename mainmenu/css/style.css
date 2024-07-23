@@ -1,0 +1,579 @@
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 100%
+}
+
+body {
+    background-color: #f0ffff;
+    font-family: "Switzer", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2
+}
+
+.h1,
+h1 {
+    font-size: calc(1.375rem + 1.5vw)
+}
+
+.h2,
+h2 {
+    font-size: calc(1.325rem + 0.9vw)
+}
+
+.h3,
+h3 {
+    font-size: calc(1.3rem + 0.6vw)
+}
+
+.h4,
+h4 {
+    font-size: calc(1.275rem + 0.3vw)
+}
+
+.h5,
+h5 {
+    font-size: 1.25rem
+}
+
+.h6,
+h6 {
+    font-size: 1rem
+}
+
+@media screen and (min-width:1200px) {
+
+    .h1,
+    h1 {
+        font-size: 2.5rem
+    }
+
+    .h2,
+    h2 {
+        font-size: 2rem
+    }
+
+    .h3,
+    h3 {
+        font-size: 1.75rem
+    }
+
+    .h4,
+    h4 {
+        font-size: 1.5rem
+    }
+}
+
+@font-face {
+    font-family: "Switzer";
+    src: url("../webfonts/switzer/Switzer-Medium.woff2") format("woff2"), url("../webfonts/switzer/Switzer-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Switzer";
+    src: url("../webfonts/switzer/Switzer-Semibold.woff2") format("woff2"), url("../webfonts/switzer/Switzer-Semibold.woff") format("woff");
+    font-weight: 000;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Switzer";
+    src: url("../webfonts/switzer/Switzer-Regular.woff2") format("woff2"), url("../webfonts/switzer/Switzer-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+.d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.container,
+.container-fluid {
+    margin: 0 auto;
+    padding: 0 24px
+}
+
+.container {
+    max-width: 1320px
+}
+
+.container-fluid {
+    max-width: 1470px
+}
+
+.anchor-overlay {
+    font-size: 0;
+    inset: 0;
+    position: absolute;
+    z-index: 1
+}
+
+@media screen and (min-width:576px) {
+    .search-form:not(.documentation-sidebar__form) form {
+        height: 68px
+    }
+
+    .search-form:not(.documentation-sidebar__form) input[type=text] {
+        padding: 0 75px 0 22px
+    }
+
+    .search-form:not(.documentation-sidebar__form) input[type=submit] {
+        bottom: 6px;
+        width: 58px;
+        right: 9px;
+        top: 6px
+    }
+}
+
+.site-header {
+    margin: 0 0 30px;
+    padding: 20px 0
+}
+
+@media screen and (min-width:576px) {
+    .site-header {
+        margin: 0 0 9px;
+        padding: 45px 0
+    }
+}
+
+.search-helper {
+    text-align: center
+}
+
+.search-helper__inner {
+    max-width: 690px;
+    margin: 0 auto
+}
+
+.search-helper .search-form {
+    margin: 20px 0 0
+}
+
+@media screen and (min-width:576px) {
+    .search-helper .search-form {
+        margin: 32px 0 0
+    }
+}
+
+@media screen and (min-width:992px) {
+    .search-helper h2 {
+        font-size: 44px
+    }
+}
+
+.documentation-links {
+    margin: 30px 0
+}
+
+.documentation-links__inner>.row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px
+}
+
+.documentation-links__single {
+    background-color: #ffffff;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    padding: 45px 32px;
+    position: relative;
+    -webkit-transition: 300ms -webkit-box-shadow linear;
+    transition: 300ms -webkit-box-shadow linear;
+    transition: 300ms box-shadow linear;
+    transition: 300ms box-shadow linear, 300ms -webkit-box-shadow linear
+}
+
+.documentation-links__single:hover {
+    -webkit-box-shadow: 0 16px 64px -16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 64px -16px rgba(0, 0, 0, 0.2)
+}
+
+.documentation-links__icon {
+    margin: 0 0 33px
+}
+
+.documentation-links__content>h2 {
+    font-size: 22px
+}
+
+.documentation-links__content>p {
+    color: #888888;
+    margin-right: -10px
+}
+
+.documentation-links__content>p:last-of-type {
+    margin-bottom: 0
+}
+
+@media screen and (min-width:576px) {
+    .documentation-links {
+        margin: 60px 0
+    }
+
+    .documentation-links__inner>.row {
+        -ms-grid-columns: 1fr 38px 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 38px
+    }
+
+    .documentation-links__icon {
+        margin: 0 0 53px
+    }
+
+    .documentation-links__content>h2 {
+        margin: 0 0 16px
+    }
+}
+
+@media screen and (min-width:992px) {
+    .documentation-links {
+        margin: 150px 0 60px
+    }
+
+    .documentation-links__inner>.row {
+        -ms-grid-columns: 1fr 38px 1fr 38px 1fr;
+        grid-template-columns: 1fr 1fr 1fr
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .documentation-links__inner>.row {
+        -ms-grid-columns: 1fr 38px 1fr 38px 1fr 38px 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr
+    }
+}
+
+.documentation-sidebar {
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    min-height: 100vh;
+    padding: 20px;
+    max-width: 327px;
+    overflow-y: auto;
+    position: fixed;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    top: 0;
+    -webkit-transform: translateX(-327px);
+    transform: translateX(-327px);
+    -webkit-transition: 300ms -webkit-transform linear;
+    transition: 300ms -webkit-transform linear;
+    transition: 300ms transform linear;
+    transition: 300ms transform linear,
+        300ms -webkit-transform linear;
+    width: 100%
+}
+
+.documentation-sidebar::-webkit-scrollbar {
+    width: 0
+}
+
+.documentation-sidebar::-webkit-scrollbar-thumb {
+    background-color: transparent
+}
+
+.documentation-sidebar__logo {
+    margin-bottom: 50px
+}
+
+.documentation-sidebar__toggle {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    position: fixed;
+    -webkit-transform: translate(5px, 10px) rotate(0);
+    transform: translate(5px, 10px) rotate(0);
+    -webkit-transition: 300ms -webkit-transform linear;
+    transition: 300ms -webkit-transform linear;
+    transition: 300ms transform linear;
+    transition: 300ms transform linear, 300ms -webkit-transform linear
+}
+
+.documentation-sidebar__menu {
+    margin-top: 50px;
+    padding-left: 20px
+}
+
+.documentation-sidebar__menu ul {
+    padding-left: 0;
+    list-style-type: none
+}
+
+.documentation-sidebar__menu>ul {
+    font-weight: 500;
+    font-size: 18px
+}
+
+.documentation-sidebar__menu>ul ul {
+    border-left: 1.5px solid #B2B2B2;
+    color: #000000;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 30px;
+    padding-left: 18px
+}
+
+.documentation-sidebar__menu .menu-item {
+    margin-bottom: 30px;
+    position: relative
+}
+
+.documentation-sidebar__menu .menu-item:hover>a {
+    color: #E00000
+}
+
+.documentation-sidebar__menu .current-menu-item:before {
+    border-left: 2px solid #E42313;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0
+}
+
+.documentation-sidebar__menu .current-menu-item>a {
+    color: #E42313
+}
+
+.documentation-sidebar__menu a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-transition: 300ms color linear;
+    transition: 300ms color linear
+}
+
+.documentation-sidebar.is-open {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.documentation-sidebar.is-open~.documentation-sidebar__toggle {
+    -webkit-transform: translate(275px, 20px) rotate(-180deg);
+    transform: translate(275px, 20px) rotate(-180deg)
+}
+
+@media screen and (min-width:1200px) {
+    .documentation-sidebar {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        padding: 45px 20px
+    }
+
+    .documentation-sidebar__logo {
+        margin-bottom: 70px;
+        padding-left: 30px
+    }
+
+    .documentation-sidebar__toggle {
+        display: none
+    }
+
+    .documentation-sidebar__menu {
+        margin-top: 90px
+    }
+}
+
+.documentation-content {
+    padding: 50px 20px 20px 20px;
+    max-width: 1140px;
+    width: 100%
+}
+
+@media screen and (min-width:1200px) {
+    .documentation-content {
+        margin-left: 327px;
+        padding: 100px;
+        width: calc(100% - 327px)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --brand: #d3b0d8;
+    --dark: #092032;
+    --body: #516171;
+    --border: rgba(0, 0, 0, 0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+/* navbar */
+.top-nav {
+    background-color: var(--brand);
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.top-nav p {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.top-nav span,
+.top-nav i {
+    vertical-align: middle;
+}
+
+.navbar {
+    box-shadow: var(--shadow);
+}
+
+.social-icons a {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: #fff;
+    color: var(--brand);
+}
+
+.conditions-section {
+    margin: 20px 0;
+}
+
+.conditions-section a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navbar-brand .dot {
+    color: var(--brand);
+}
+
+.btn {
+    padding: 8px 26px;
+}
+
+.btn-brand {
+    border-color: var(--brand);
+    background-color: var(--brand);
+    color: rgb(255, 255, 255);
+}
+
+.btn-brand:hover {
+    background-color: rgb(109, 238, 255);
+    border-color: rgb(97, 223, 255);
+    color: rgb(255, 255, 255);
+}
+
+.intro {
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.intro p {
+    max-width: 500px;
+}
+
+.intro h6 {
+    color: var(--brand);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.intro h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.info-box {
+    align-items: center;
+    display: flex;
+}
+
+.info-box img {
+    width: 90px;
+}
